@@ -4,14 +4,17 @@
 可以应用于单个控制器加载多页视图的场景
 
 视图代理
+
 /**
  分页滚动视图停止滚动的下标及方向
  **/
+ 
 -(void)paperScrollViewDidMoveToPageIndex:(NSUInteger)index andMoveDirection:(JFPaperScrollDirection)moveDirection;
 
 /**
  分页滚动视图停止滚动的下标及方向(用户手动拖动滚动视图导致的回调)
  **/
+
 -(void)paperScrollViewDidDragEndToPageIndex:(NSUInteger)index andMoveDirection:(JFPaperScrollDirection)moveDirection;
 
 
